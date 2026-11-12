@@ -1,0 +1,18 @@
+# Root robots.txt for shiquda.github.io (GitHub Pages user site).
+# Project sites /SpotAsk/ and /moonleaf/ are served by their own repos.
+# This file exists because Google only honors robots.txt at the host root.
+
+User-agent: *
+Allow: /
+
+# Keep raw Markdown mirrors out of Google/Bing (same intent as /SpotAsk/robots.txt).
+User-agent: Googlebot
+Allow: /
+Disallow: /SpotAsk/markdown/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /SpotAsk/markdown/
+
+Sitemap: https://shiquda.github.io/SpotAsk/sitemap.xml
+Sitemap: https://shiquda.github.io/moonleaf/sitemap.xml
